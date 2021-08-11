@@ -7,3 +7,8 @@ edition = "2018"
 
 [dependencies]
 cursive = "0.16"
+
+[features]
+default = ["termion-backend"]
+termion-backend = ["cursive/termion-backend"]
+crossterm-backend = ["cursive/crossterm-backend"]
